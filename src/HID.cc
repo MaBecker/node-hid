@@ -150,10 +150,10 @@ public:
     {
       len = hid_read_timeout(_hid->_hidHandle, buf, READ_BUFF_MAXSIZE, mswait);
     }
-    if (len <= 0)
-    {
-      SetError("could not read from HID device");
-    }
+    // if (len <= 0)
+    //{
+    //  SetError("could not read from HID device");
+    //}
   }
 
   void OnOK() override
